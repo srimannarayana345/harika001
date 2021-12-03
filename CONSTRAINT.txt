@@ -1,0 +1,45 @@
+
+Constraint is  predefined rule that is applied on db column.
+
+
+
+                                                                                CONSTRAINTS
+
+
+            NOT NULL        UNIQUE                PRIMARY                     FOREIGN                               DEFAULT                         CHECK 
+      ( WILL NOT ALLOW       (WILL ALLOW        NOT NULL+ UNIQUE        TO ESTABLISH RELATIONSHP B/W          TO SPECIFY DEGFAULT VALUE    TO CHECK THE CONDITION 
+         NULL VALUES  )        NULL VALUES )                           COLUMNS IN DIFFERENT TABLES OR            IN A COLUMN                  BASED USER REQUIREMENT               
+                                                                        COLUMNS IN SAME TABLE  
+
+ALLOW DUPLICATE VALUES      WILL NOT ALLOW     NOT ALLOW NULL
+                           DUPLICATE VALUES          +
+                                              NOT ALLOW DUPLICATE
+
+
+
+
+
+ADDIND CONSTRAINTS IN 3 METHORDS
+
+COLUMN LEVEL
+
+CTEATE TABLE EMP(
+EMPNO INT NOT NULL,
+EMPNAME VARCHAR(20) PRIMRY KEY
+
+)
+
+TABLE LEVEL
+
+CTEATE TABLE EMP(
+EMPNO INT NOT NULL,
+EMPNAME VARCHAR(20) ,
+
+PRIMARY COLUMN
+
+
+)
+
+ALTER LEVEL
+
+ALTER TABLE TBL_NAME ALTER COLUMN CONSTRAINT
